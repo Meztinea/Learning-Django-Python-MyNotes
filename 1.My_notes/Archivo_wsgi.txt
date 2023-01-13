@@ -1,0 +1,14 @@
+wsgi.py
+
+Información sobre el archivo wsgi.py que se crea en automático al crear el proyecto
+
+WSGI son las siglas de Web Server Gateway Interface. Es una especificación que describe 
+cómo se comunica un servidor web con una aplicación web, y cómo se pueden llegar a encadenar 
+diferentes aplicaciones web para procesar una solicitud/petición (o request).
+
+WSGI no es un servidor, un módulo de Python, un framework, una API o cualquier tipo de software. 
+Es solo una especificación de interfaz mediante la cual el servidor y la aplicación se comunican.
+
+Un servidor WSGI (lo que significa que cumple con el WSGI) solo recibe la solicitud del cliente, 
+la pasa a la aplicación y luego envía la respuesta devuelta por la aplicación al cliente. No 
+hace nada más. Todos los detalles explicitos deben ser suministrados por la aplicación o middleware.

@@ -1,0 +1,14 @@
+settings.py
+
+Información sobre el archivo que se crea en automático al crear un nuevo proyecto
+
+Incluye una serie de constantes que almacenan las configuraciones de cada proyecto.
+Es el archivo donde se modifica la configuración de todo el proyecto. Permite modificar varios 
+aspectos importantes, entre ellos:
+
+* Configurar la base de datos
+* Activar o desactivar el modo depuración (Para realizar cambios al proyecto)(Modo desarrollo o producción)
+* Indicar las aplicaciones que son parte del proyecto
+* Indicar los templates que son parte del proyecto
+* Indicar los archivos estáticos que son parte del proyecto
+

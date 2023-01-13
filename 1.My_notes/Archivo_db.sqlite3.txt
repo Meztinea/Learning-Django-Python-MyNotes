@@ -1,0 +1,16 @@
+db.sqlite3
+
+Información sobre el archivo que se genera en automático al crear el proyecto 
+
+Es la base de datos con la que se inicia el proyecto en su configuración por defecto,
+puede ser modificado en el archivo settings en el apartado DATABASES.
+
+Las bases de datos que soporta Django hasta la versión 4.1 son:
+
+* PostgreSQL
+* MariaDB
+* MySQL
+* Oracle
+* SQlite
+
+Siendoo SQlite la base de datos por defecto al crear un nuevo proyecto con el comando startproject

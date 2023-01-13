@@ -1,0 +1,7 @@
+__init__.py
+
+Información sobre el archivo que se crea en automático al crear el proyecto
+
+El principal uso de __init__.py es inicializar paquetes de Python, se utiliza para realizar 
+configuraciones de importación. Algo que se utiliza mucho en este archivo es la importación 
+de clases, funciones, etc, para que puedan ser utilizadas en otros paquetes.

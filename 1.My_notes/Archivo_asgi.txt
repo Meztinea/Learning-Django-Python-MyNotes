@@ -1,0 +1,11 @@
+asgi.py
+
+Información sobre el archivo asgi.py que se crea en automático con el proyecto
+
+ASGI es una interfaz para que Python interactúe con servidores web de manera asíncrona.
+
+Es necesario para el despliegue de la aplicación. Contiene la configuración para la implementación
+opcional a la Interfaz de puerta de enlace de servidor asíncrono o ASGI.
+
+Cada vez que un usuario nuevo inicie una petición se creará una “aplicación” de ASGI, 
+esta conexión, a diferencia de una petición HTTP normal, es persistente.

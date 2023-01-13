@@ -1,0 +1,25 @@
+Migraciones
+
+Las migraciones son una manera incremental que tenemos para actualizar el
+esquema / estructura o como está formada la base de datos.
+
+Cada cambio que hacemos en los modelos, como agregar o modificar campos, generan migraciones 
+automáticas para propagar los cambios sobre la base de datos.
+
+Django ya tiene una serie de tablas preconfiguradas que dan información general del proyecto.
+Entre las tablas que vienen preconfiguradas están:
+* auth_group
+* auth_permission
+* auth_user
+* django_admin_log
+* django_session
+
+Estas tablas pueden encontrarse en el archivo de base de datos que se crea por defecto al
+momento de crear un nuevo proyecto. Las tablas solo aparecerán despues de realizar la primer
+migración.
+
+Django ya viene con una serie de migraciones listas para aplicar pero se pueden
+crear propias migraciones a medida que se va construyendo el proyecto.
+
+Realizar migraciones en Django es obligatorio, si no se ejecutan las migraciones la aplicacion 
+no se ejecuta.

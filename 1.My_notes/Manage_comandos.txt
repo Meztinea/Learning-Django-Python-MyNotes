@@ -1,0 +1,21 @@
+Comandos que pueden ejecutarse gracias a manage.py
+* Los comandos siempre deben comenzar con 'python'
+
+
+python manage.py --help
+    Muestra los comandos que pueden ser utilizados para la configuración y modificación del proyecto
+
+python manage.py runserver
+
+
+django-admin startproject <nombre del proyecto> .
+
+
+python manage.py migrate 
+
+
+python manage.py createsuperuser
+    Crea un super usuario para acceder al panel administrativo del proyecto Django
+    Este comando solicitará el nombre de usuario, email y contraseña
+
+python manage.py startapp <nombre de la aplicación>

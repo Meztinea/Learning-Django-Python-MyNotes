@@ -1,0 +1,41 @@
+Página oficial de Django: https://www.djangoproject.com/
+
+Documentación de Django: https://docs.djangoproject.com/en/4.1/
+
+Los primeros pasos para comenzar con un proyecto de django son:
+
+1. Instalar Python y agregar al PATH
+
+2. Instalar el editor de código y agregar al PATH (Visual Studio Code mi favorito)
+        Configuraciones adicionales para mi editor favorito:
+            Ir a las extensiones e instalar Python (IntelliSense)
+            Ir a las extensiones e instalar Material Icon Theme (Para mejorar los iconos 
+                                                                en el explorador de VSCode)
+
+3. Crear el entorno virtual para el proyecto con el comando:
+        python -m venv env
+
+4. Activar el entorno virtual con el comando:
+        env/Scripts/activate
+
+5. Instalar Django con el comando:
+        pip install django              
+        
+        * También puede indicarse la versión de django a instalar con el comando:
+                pip install Django==4.1.5
+
+6. Crear un nuevo proyecto de django con el siguiente comando:
+(Al crear un proyecto con este comando se crean los archivos necesarios para desarrollar el proyecto)
+Encontrar más información en el siguiente link: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
+* Nota importante: Evitar utilizar nombres como django, python, etc. Pueden provocar errores.
+        django-admin startproject <nombre del proyecto> .
+
+
+Ahora se puede comenzar a configurar el proyecto y realizar modificaciones a los archivos creados en el 
+proyecto. 
+
+PASOS OPCIONALES
+
+1. Instalar el autoformateador para archivos Python 'autopep8' con el comando:
+        pip install autopep8
+        

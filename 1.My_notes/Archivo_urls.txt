@@ -1,0 +1,8 @@
+urls.py
+
+Información del archivo que se crea en automático con un nuevo proyecto
+
+Es el documento de configuración donde se indicarán las rutas del proyecto.
+Este fichero se encarga de mapear las URLs de la aplicación a los Views.
+En este archivo podemos especificar cual es la relación entre una vista
+concreta y la url en la que aparece esa vista.

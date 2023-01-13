@@ -1,0 +1,19 @@
+App
+Una app es una aplicación web que implementa una funcionalidad específica, ya sea sencilla o compleja, 
+una app puede ser incluida en múltiples proyectos.
+
+
+Proyecto
+un proyecto es un conjunto de configuraciones a las que se "conectan" varias apps para que todo unido 
+de lugar a un sitio web completo. Un proyecto puede contener múltiples apps.
+
+
+Ejemplos de app pueden ser un blog, autenticacióon de usuario, articulos, tienda, etc.
+Un ejemplo de un proyecto es un sitio web para adoptar mascotas:
+    * Tiene un login para iniciar sesión
+    * Tiene una página principal
+    * Tiene un apartado para conocer a las mascotas que pueden adoptarse
+    * Tiene un apartado con artículos informativos para aprender a cuidar a una mascotas
+    * Tiene una tienda para comprar articulos relacionados al cuidado de las mascotas
+
+Varias aplicaciones en conjunto generan un proyecto en Django
