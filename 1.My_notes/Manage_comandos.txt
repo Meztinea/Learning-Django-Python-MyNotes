@@ -19,3 +19,4 @@ python manage.py createsuperuser
     Este comando solicitará el nombre de usuario, email y contraseña
 
 python manage.py startapp <nombre de la aplicación>
+    Crea una nueva aplicación (Carpeta con todos los archivos necesarios para la app)
