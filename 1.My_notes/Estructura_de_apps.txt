@@ -1,0 +1,31 @@
+Estructura de las apps
+
+* MIGRATIONS (CARPETA)
+La carpeta migrations almacena los cambios generados en los modelos. Cada cambio que hacemos 
+en los modelos, como agregar o modificar campos, generan migraciones automáticas para propagar 
+los cambios sobre la base de datos.
+
+* __INIT__.PY
+El principal uso de __init__.py es inicializar paquetes de Python, se utiliza para realizar 
+configuraciones de importación. Algo que se utiliza mucho en este archivo es la importación 
+de clases, funciones, etc, para que puedan ser utilizadas en otros paquetes.
+
+* ADMIN.PY
+Archivo para el panel de administración
+
+* APPS.PY
+Archivo para configurar una aplicación
+
+* MODELS.PY
+Archivo en el que se definen los modelos de esta aplicación. Un Django model generalmente se 
+refiere a una tabla de la base de datos, los atributos de ese modelo se convierten en las columnas 
+de esa tabla. Se crean la clases para definir las tablas de la base de datos. 
+
+* TESTS.PY
+Archivo necesario para crear pruebas unitarias que validen el funcionamiento de las apps.
+
+* VIEWS.PY
+Una función de vista o una vista, como es conocida generalmente, es una función en Python que hace 
+una solicitud Web y devuelve una respuesta Web, esta respuesta puede ser el contenido de una 
+página, un error 404, una imagen, un documento XML, entre muchas cosas más.
+Aquí se define lo que la aplicación debe realizar al momento de entrar en la url o ruta

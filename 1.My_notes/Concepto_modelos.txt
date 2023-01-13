@@ -1,0 +1,14 @@
+Modelos
+
+* Un Django model generalmente se refiere a una tabla de la base de datos, los atributos de ese 
+modelo se convierten en las columnas de esa tabla esos atributos reciben el nombre de django 
+fields los cuales manejan automáticamente las conversiones de tipos de datos para la base de datos 
+que estemos usando.
+
+* Los modelos definen la estructura de los datos almacenados, incluidos los tipos de campo y los 
+atributos de cada campo, como su tamaño máximo, valores predeterminados, lista de selección de 
+opciones, texto de ayuda para la documentación, texto de etiqueta para formularios, etc.
+
+* Un modelo es la fuente única y definitiva de información sobre sus datos. Contiene los campos 
+esenciales y los comportamientos de los datos que usted guarda. Django sigue el Principio DRY. 
+El objetivo es definir el modelo de datos en un solo lugar y derivar cosas de este automáticamente.
