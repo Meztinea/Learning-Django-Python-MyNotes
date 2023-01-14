@@ -12,3 +12,5 @@ Es solo una especificación de interfaz mediante la cual el servidor y la aplica
 Un servidor WSGI (lo que significa que cumple con el WSGI) solo recibe la solicitud del cliente, 
 la pasa a la aplicación y luego envía la respuesta devuelta por la aplicación al cliente. No 
 hace nada más. Todos los detalles explicitos deben ser suministrados por la aplicación o middleware.
+
+Este archivo permite hacer deploy del proyecto a un servidor

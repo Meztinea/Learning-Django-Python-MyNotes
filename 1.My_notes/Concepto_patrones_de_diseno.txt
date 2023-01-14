@@ -5,3 +5,37 @@ aplicable a diferentes problemas de diseño de software. Se trata de plantillas 
 identifican problemas en el sistema y proporcionan soluciones apropiadas a 
 problemas generales a los que se han enfrendado los desarroladores durante un largo
 periodo de tiempo, a través de prueba y error. 
+
+Los patrones de diseño muestran la estructura que debe cumplir un proyecto para evitar que
+en el futuro se generen errores en el código. Son la ruta para la creación de un proyecto. 
+
+Los antipatrones, son aquellas prácticas que no deben implementarse al desarrollar código. 
+
+Dos patrones de diseño importantes son: 
+* Modelo Vista Controlador (MVC) 
+* Modelo Template Vista (MTV)
+
+*** Modelo Vista Controlador (MVC) ***
+
+Modelo: Se encarga de los datos, generalmente (pero no obligatoriamente) consultando la 
+base de datos. Actualizaciones, consultas, búsquedas, etc. todo eso va aquí en el modelo.
+
+Vistas: Son la representación visual de los datos, todo lo que tenga que ver con la interfaz
+gráfica va aquí. Ni el modelo ni el controlador se preocupan de cómo se verán los datos, esa
+responsabilidad es únicamente de la vista.
+
+Controlador: Se encarga de controlar, recibe las órdenes del usuario y se encarga de solicitar
+los datos al modelo y de comunicarárselos a la vista.
+
+*** Modelo Template Vista (MTV) ***
+
+En Django, el controlador sigue estando presente, nada más que de una manera intrínseca, ya que
+todoo el framework Django es el controlador.
+
+Modelo: Maneja todo lo relacionado con la información, esto incluye cómo acceder a esta, la 
+validación, relación entre los datos y su comportamiento
+
+Template: Decide cómo será mostrada la información
+
+Vista: Es un enlace entre el modelo y el template. Decide qué información será mostrada y por 
+cual template.

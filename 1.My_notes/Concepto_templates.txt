@@ -1,0 +1,5 @@
+Templates
+
+Un template es la capa de presentación , aquí se define como se mostrará la información al cliente
+ya sea mediante un archivo html, un objeto json, xml, etc. 
+

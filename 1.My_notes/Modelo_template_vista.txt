@@ -1,0 +1,20 @@
+Modelo Template Vista (MTV)
+
+La manera en la que se comunican los diferentes paquetes, modulos, archivos de Django es:
+
+1. El navegador hace una petición al url map
+        El url map es el archivo urls.py del proyecto (no de las apps), este archivo almacena
+        la lista de urls que contiene el proyecto completo.
+
+2. El url map se comunica con la vista que debe responder a esa petición
+        La vista contiene la lógica para dar respuesta a la petición (funciones)
+        
+3. La vista se comunica con el modelo (en caso de ser necesario) y el modelo puede solicitar 
+    datos a la base de datos.
+
+4. El modelo le entrega los datos solicitados al template, el template utiliza los datos y los
+        ordena de manera bonita. (html)
+
+5. El template le envía al navegador lo que ha sido solicitado.
+
+Se adjunta el archivo Django_mtv para comprender mejor cómo funciona el Patrón de Diseño MTV.

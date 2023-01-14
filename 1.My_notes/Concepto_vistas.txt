@@ -1,0 +1,4 @@
+Vistas
+
+Las vistas se encargan de implementar la lógica de negocio. Se refiere al puente entre los datos
+y los templates (html). Es donde se especifica qué datos serán mostrados y cómo se tratarán.  

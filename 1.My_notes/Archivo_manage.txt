@@ -2,6 +2,8 @@ manage.py
 
 Información sobre el archivo manage.py que se crea en automático al crear un nuevo proyecto
 
+Permite ejecutar diferentes comandos sobre el proyecto.
+
 CLI 
 La interfaz de línea de comandos o interfaz de línea de órdenes es un tipo de interfaz de usuario de 
 computadora que permite a los usuarios dar instrucciones a algún programa informático o al sistema 
@@ -11,3 +13,6 @@ Es una utilidad de línea de comandos (CLI) que permite interactuar con un proye
 Dentro del proyecto aparece como un script de python y ayuda con la administración del sitio. 
 Con él podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, 
 también permite crear aplicaciones, trabajar con bases de datos y empezar el desarrollo del servidor web.
+
+Algunos de los comandos permiten ejecutar migraciones, respaldos de información, cargar información,
+generar nuevas aplicaciones, etc. 

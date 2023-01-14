@@ -12,3 +12,6 @@ opciones, texto de ayuda para la documentación, texto de etiqueta para formular
 * Un modelo es la fuente única y definitiva de información sobre sus datos. Contiene los campos 
 esenciales y los comportamientos de los datos que usted guarda. Django sigue el Principio DRY. 
 El objetivo es definir el modelo de datos en un solo lugar y derivar cosas de este automáticamente.
+
+Mediante los modelos se puede interactuar con la base de datos, validar registros y es posible
+establecer relación entre los modelos. 
