@@ -1,4 +1,15 @@
 Vistas
 
-Las vistas se encargan de implementar la lógica de negocio. Se refiere al puente entre los datos
+* Las vistas se encargan de implementar la lógica de negocio. Se refiere al puente entre los datos
 y los templates (html). Es donde se especifica qué datos serán mostrados y cómo se tratarán.  
+
+* Una View es un lugar donde ponemos la "lógica" de nuestra aplicación. Pedirá información del modelo 
+que has creado antes y se la pasará a la plantilla. Las Vistas se colocan en el archivo views.py
+
+* Un función de vista o una vista, como es conocida generalmente, es una función en Python que hace 
+una solicitud Web y devuelve una respuesta Web, esta respuesta puede ser el contenido de una página, 
+un error 404, una imagen, un documento XML, entre muchas cosas más.
+
+* La vista contiene toda la lógica necesaria para devolver una respuesta, todas estas respuestas se 
+encuentran en un único archivo y este archivo se llama: views.py, que se encuentra dentro de cada 
+aplicación de Django.

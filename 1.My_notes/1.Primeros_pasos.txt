@@ -36,6 +36,9 @@ proyecto.
 
 PASOS OPCIONALES
 
-1. Instalar el autoformateador para archivos Python 'autopep8' con el comando:
+* En caso de necesitar que los atributos de un modelo sean de tipo imagen, instalar Pillow con:
+        python -m pip install Pillow
+
+* Instalar el autoformateador para archivos Python 'autopep8' con el comando:
         pip install autopep8
         

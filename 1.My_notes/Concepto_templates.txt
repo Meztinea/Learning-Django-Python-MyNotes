@@ -3,3 +3,12 @@ Templates
 Un template es la capa de presentación , aquí se define como se mostrará la información al cliente
 ya sea mediante un archivo html, un objeto json, xml, etc. 
 
+Una plantilla o template es un archivo de texto que determina la estructura o diseño de un archivo 
+(como una página HTML), con marcadores usados para representar el contenido real. Django 
+automaticamente buscará plantillas en un directorio llamado 'templates' de su aplicación. 
+
+Podemos definir un template como el archivo a través del cual el usuario podrá visualizar la información 
+que solicita. Comúnmente asociamos los templates para archivos .html y, si bien es cierto, estamos en 
+lo correcto, en Django no es el único tipo de archivo que podemos utilizar. De igual forma podemos 
+presentar la información en archivos .XML, .YAML, .JSON etc.. Esto gracias al fabuloso motor de Template 
+que posee el Framework.
