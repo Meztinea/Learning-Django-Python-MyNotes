@@ -27,7 +27,7 @@
                         <h5 class="card-title">{{ town.name }}</h5>
                         <h5 class="card-title">{{ town.country }}</h5>
                         <p class="card-text">{{ town.description }}</p>
-                        <a class="btn btn-dark" href="/">Leer mas</a>
+                        <a class="btn btn-dark" href="{% url 'town' id=town.id %}">Leer mas</a>
                     </div>
                 </div>
                 {% endfor %}

@@ -7,3 +7,8 @@ def index(request):
     towns = Town.objects.all()
     
     return render(request, 'towns.html', {'towns': towns})
+
+def get_town(request, id):
+    town = Town.objects.get(id=id)
+    
+    return render(request, 'town.html', {'town': town})
