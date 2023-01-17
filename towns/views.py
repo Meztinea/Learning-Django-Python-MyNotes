@@ -6,5 +6,4 @@ from .models import Town
 def index(request):
     towns = Town.objects.all()
     
-    return render(request, 'towns.html')
-
+    return render(request, 'towns.html', {'towns': towns})
