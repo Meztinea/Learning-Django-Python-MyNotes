@@ -37,6 +37,7 @@ proyecto.
 PASOS OPCIONALES
 
 * En caso de necesitar que los atributos de un modelo sean de tipo imagen, instalar Pillow con:
+        * Pillow es la libreria para trabajar con imágenes en Django
         python -m pip install Pillow
 
 * Instalar el autoformateador para archivos Python 'autopep8' con el comando:

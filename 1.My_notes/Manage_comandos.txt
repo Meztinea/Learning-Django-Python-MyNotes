@@ -30,3 +30,7 @@ python manage.py makemigrations
     * Este comando genera un nuevo archivo almacenado en la carpeta migrations de la aplicación
     en la que se creó el nuevo modelo, en dicho archivo, se encuentra el código que se ejecutará
     para la creación de la nueva tabla, modificación de tabla, etc. 
+
+python manage.py shell
+    Inicia el interprete de python para ejecutar comandos. 
+    

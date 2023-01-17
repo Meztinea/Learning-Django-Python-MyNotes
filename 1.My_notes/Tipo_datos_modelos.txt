@@ -1,0 +1,12 @@
+Tipos de datos para modelos
+
+Se enlistan los tipos de datos más utilizados para crear modelos (tablas de db)
+
+* CharField
+* TextField
+* IntegerField
+* DateTimeField
+* ImageField (Disponible instalando Pillow)
+
+Más información en la documentación: 
+https://docs.djangoproject.com/es/4.1/topics/db/models/

@@ -1,0 +1,30 @@
+Foreign key
+
+Como en SQL, en Django también se utilizan las foreign key
+La manera de definir una foreign key en un modelo es:
+
+project = models.ForeignKey(Project, on_delete=models.CASCADE)
+
+* project es el nombre de la columna donde se almacenará a la foreign key
+* models es una palabra reservada propia de Django
+* ForeignKey indica que el contenido de la columna debe tomarse como una referencia 'foreign key'
+* (Project) indica la tanla con la que debe relacionarse esta foreign key
+* (, on delete=models.CASCADE) indica que al eliminar un registro, todos los registros relacionados
+        deben ser eliminados en CASCADA.
+
+
+Para comprender mejor el ejemplo se muestran los modelos a continuación
+
+class Project(models.Model):
+    name = models.CharField(max_length=200)
+
+class Task(models.Model):
+    tittle = models.CharField(max_length=200)
+    description = models.TextField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+
+
+La tabla Task se relaciona con la tabla proyecto por medio de la foreign key que lleva por nombre
+project. 
+Cuando un projecto sea eliminado, todas las tareas de ese proyecto también deben eliminarse. Se eliminan
+en cascada. 
