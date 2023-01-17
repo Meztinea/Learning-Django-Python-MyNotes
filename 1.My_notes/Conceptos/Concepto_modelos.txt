@@ -15,3 +15,17 @@ El objetivo es definir el modelo de datos en un solo lugar y derivar cosas de es
 
 Mediante los modelos se puede interactuar con la base de datos, validar registros y es posible
 establecer relación entre los modelos. 
+
+Un ejemplo de modelo es el siguiente:
+
+class Town(models.Model):
+    name = models.CharField(max_length=100)
+    description = models.TextField()
+
+El modelo tiene el nombre de Town, hereda de la clase Model.
+El modelo tiene dos atributos name y description.
+Name es de tipo CharField y description es de tipo TextField.
+
+Tomando en cuenta que los modelos son como tablas en SQL. La tabla se llamará Town y tendrá dos 
+columnas, una llamada name y otra llamada description, además contará con un id que es creado
+automáticamente al ejecutar las migraciones. 

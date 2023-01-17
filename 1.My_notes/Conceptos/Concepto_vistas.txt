@@ -13,3 +13,20 @@ un error 404, una imagen, un documento XML, entre muchas cosas más.
 * La vista contiene toda la lógica necesaria para devolver una respuesta, todas estas respuestas se 
 encuentran en un único archivo y este archivo se llama: views.py, que se encuentra dentro de cada 
 aplicación de Django.
+
+Un ejemplo de vista es el siguiente:
+
+def index(request):
+    towns = Town.objects.all()
+    
+    return render(request, 'towns.html', {'towns': towns})
+
+La vista lleva el nombre de index, y recibe el parámetro request.
+Dentro de la vista se realiza una solicitud a un modelo (tabla de la base de datos), y se pide
+que de la tabla (modelo) Town sean traidos todos los objetos que contenga, se almacenan en la variable
+towns.
+La vista retorna la ejecución del template que lleva por nombre towns, además se le envían los datos
+necesarios al template (variable towns) para que los organice en su lugar correspondiente.
+
+Como vemos la vista se comunica con los templates y con los modelos, trae datos de los modelos para 
+posteriormente enviarlos directamente al template y cumplir con la solicitud que se ha realizado.

@@ -12,3 +12,28 @@ que solicita. Comúnmente asociamos los templates para archivos .html y, si bien
 lo correcto, en Django no es el único tipo de archivo que podemos utilizar. De igual forma podemos 
 presentar la información en archivos .XML, .YAML, .JSON etc.. Esto gracias al fabuloso motor de Template 
 que posee el Framework.
+
+Un ejemplo de un template es el siguiente: 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aguascalientes y sus municipios</title>
+</head>
+<body>
+    <h1>
+        {{ town.name }}
+    </h1>
+</body>
+</html>
+
+Es código HTML 5, lleva por titulo Aguascalientes y sus municipios y en el h1 del body utiliza
+los datos que le ha enviado la vista, para poder mostrarlos. En este caso muestra el nombre de 
+un municipio.
+
+Los datos que está mostrando el template han sido extraidos desde la base de datos por medio de 
+modelos, la vista solicitó los datos y los envió al template para que el template los organice 
+y muestre en el lugar que les corresponde.

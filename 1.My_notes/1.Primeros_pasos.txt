@@ -2,7 +2,7 @@ Página oficial de Django: https://www.djangoproject.com/
 
 Documentación de Django: https://docs.djangoproject.com/en/4.1/
 
-Los primeros pasos para comenzar con un proyecto de django son:
+Los primeros pasos para comenzar con un proyecto de Django son:
 
 1. Instalar Python y agregar al PATH
 
@@ -24,7 +24,7 @@ Los primeros pasos para comenzar con un proyecto de django son:
         * También puede indicarse la versión de django a instalar con el comando:
                 pip install Django==4.1.5
 
-6. Crear un nuevo proyecto de django con el siguiente comando:
+6. Crear un nuevo proyecto de Django con el siguiente comando:
 (Al crear un proyecto con este comando se crean los archivos necesarios para desarrollar el proyecto)
 Encontrar más información en el siguiente link: https://docs.djangoproject.com/en/4.1/intro/tutorial01/
 * Nota importante: Evitar utilizar nombres como django, python, etc. Pueden provocar errores.

@@ -1,0 +1,67 @@
+Los pasos a realizar para crear una nueva url a la que se pueda acceder desde el navegador es:
+
+1. Crear la vista
+    La función recibe el argumento 'request'.
+    Dentro de la aplicación a la que corresponda, se crea la vista en el archiv views.py, la vista
+    definirá que datos va a mostrar y los solicitará a los modelos de la app. 
+    Dentro del return ejecutará la función render() de Django, que puede recibir tres argumentos
+    el primer argumento será 'request', el segundo argumento es el nombre del template con el que 
+    mostrará los datos y el tercer argumento será un diccionario con los datos que envía para 
+    mostrar (el tercer argumento es opcional, pues pueden existir vistas que no envíen datos desde
+    la base de datos).
+
+    Un ejemplo de vista es:
+
+    def index(request):
+        towns = Town.objects.all()
+        return render(request, 'towns.html', {'towns': towns})
+
+2. Definir la url
+    Dentro del archivo urls.py de la aplicación a la que corresponde, se definirá la url que 
+    utilizará la vista para mostrar el template. Dentro de la lista urlpatterns se agregarán todas
+    las urls de la aplicación. El formato para agregar una nueva vista es: 
+    path(route, view, kwargs=None, name=None)
+    Comenzando por la ruta, seguido de la vista que se ejecutará en esa ruta, pueden enviarse nuevos
+    argumentos, en caso de ser necesario, por último, se define el nombre de la ruta que puede ser 
+    utilizado en el template, para definir una ruta a la que se puede acceder desde un botón que 
+    existe dentro del template.
+
+    Un ejemplo de url es:
+
+    path('town/<int:id>', views.get_town, name='town')
+
+    * Ruta: 'town/<int:id>'
+        Esta ruta recibe un argumento de tipo int
+    * Vista: views.get_town
+        El nombre de la vista es get_town y se encuentra en el archivo views
+    * Nombre de la ruta: name='town'
+        Es el nombre que se puede utilizar en el template
+
+3. Crear el template
+    Dentro de cada aplicación debe crearse una carpeta para almacenar sus propios templates
+    y mantener los archivos del proyecto organizados. Dentro de esta carpeta se almacenarán
+    solamente los templates que correspondan a esta aplicación. El nombre del template debe
+    coincidir con el nombre que ha sido defnido en el archivo urls.py al crear la url para 
+    este template y su correspondiente vista.
+
+    Un ejemplo de template que utiliza el nombre de la url es el siguiente: 
+
+    <a class="btn btn-dark" href="{% url 'town' id=town.id %}">Leer mas</a>
+
+    Es un botón que al dar clic accede directamente a una url que ya existe en la aplicación
+    cuyo nombre es town. 
+
+NOTAS IMPORTANTES:
+    Ya tenemos claro que las url de la app deben integrarse en un archivo urls.py dentro de 
+    la carpeta de la aplicación, pero es importante no olvidar que la aplicación debe ser
+    relacionada con el proyecto, el archivo urls de la app debe ser referenciado dentro del 
+    archivo urls.py del proyecto. 
+
+    También deben indicarse las aplicaciones que son parte del proyecto dentro del archivo
+    settings.py del proyecto. Dentro de la lista INSTALLED_APPS deben indicarse las app
+    que forman parte del proyecto, se indica el nombre de la carpeta como un string.
+
+    Otro aspecto importante es relacionar los templates de las app con la configuración del 
+    proyecto, dentro del archivo settings en la lista TEMPLATES en la variable DIRS se
+    pueden definir las direcciones de los templates que formarán parte del proyecto.
+    

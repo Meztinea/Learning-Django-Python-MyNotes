@@ -1,7 +1,7 @@
 Comandos que pueden ejecutarse gracias a manage.py
 
 * Los comandos siempre deben comenzar con 'python', menos el primer comando, pues necesita
-existir un proyecto (existir el archivo manage.py) para poder utilizar los comandos del CLI de django.
+existir un proyecto (existir el archivo manage.py) para poder utilizar los comandos del CLI de Django.
 
 django-admin startproject <nombre del proyecto> .
     Crea un nuevo proyecto, la estructura medular de un proyecto completo, todos los archivos y

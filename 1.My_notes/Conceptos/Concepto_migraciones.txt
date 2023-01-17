@@ -23,3 +23,10 @@ crear propias migraciones a medida que se va construyendo el proyecto.
 
 Realizar migraciones en Django es obligatorio, si no se ejecutan las migraciones la aplicacion 
 no se ejecuta.
+
+Comandos relacionados con las migraciones:
+    * python manage.py makemigrations   (Crea archivo de migraciones)
+    * python manage.py migrate          (Aplica las migraciones)
+
+En cada aplicación se crea una carpeta llamada migrations donde se almacenan las migraciones
+relacionadas a esa aplicación. 

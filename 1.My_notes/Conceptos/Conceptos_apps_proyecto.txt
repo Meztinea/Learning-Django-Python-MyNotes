@@ -8,17 +8,17 @@ y otras pueden venir de terceros.
 
 Proyecto
 un proyecto es un conjunto de configuraciones a las que se "conectan" varias apps para que todo unido 
-de lugar a un sitio
+de lugar a un sitio.
 
 * Es una aplicación web impulsada por Django Framework, también considerado como el punto de entrada
 de nuestro sitio web.
 
-Ejemplos de app pueden ser un blog, autenticacióon de usuario, articulos, tienda, etc.
-Un ejemplo de un proyecto es un sitio web para adoptar mascotas:
+Ejemplos de app pueden ser un blog, autenticación de usuario, artículos, tienda, etc.
+Un ejemplo de un proyecto es un sitio web para adoptar mascotas (puede incluir las aplicaciones):
     * Tiene un login para iniciar sesión
     * Tiene una página principal
     * Tiene un apartado para conocer a las mascotas que pueden adoptarse
     * Tiene un apartado con artículos informativos para aprender a cuidar a una mascotas
     * Tiene una tienda para comprar articulos relacionados al cuidado de las mascotas
 
-Varias aplicaciones en conjunto generan un proyecto en Django
+Varias aplicaciones en conjunto generan un proyecto en Django.
