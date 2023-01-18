@@ -1,0 +1,25 @@
+Shell Django Python
+
+El Shell es el interprete interactivo de Python, que nos permitirá probar los modelos, 
+hacer consultas, analizar resultados, antes de elaborar las vistas. Es muy útil si queremos 
+ahorrar tiempo al momento de responder a los requerimientos que los usuarios de la aplicación 
+puedan necesitar.
+
+Para poder acceder a la shell, abrimos una terminal o ventana de comandos, y nos ubicamos en 
+la carpeta de proyecto (en donde se encuentre el archivo manage.py) y digitamos:
+
+python manage.py shell
+
+Más información sobre el shell y cómo hacer queries: 
+https://docs.djangoproject.com/en/4.1/topics/db/queries/
+
+Algunos de los métodos que pueden utilizarse en modelos dentro del shell son:
+
+<nombre_del_modelo>.objects.all()
+    Trae todos los objetos (registros) dentro del modelos
+
+<nombre_del_modelo>.objects.get(argumento)
+    Trae solo los objetos (registros) que cumplen con una condicional o atributo
+
+<nombre_del_modelo>.objects.filter(argumento)
+    Trae solo los objetos (registros) que cumplen con una condicional o atributo

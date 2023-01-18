@@ -1,0 +1,11 @@
+Las etiquetas de Django Template Language sirven para introducir código python dentro de un archivo HTML.
+
+La sintaxis para incluir una etiqueta for dentro de HTML es:
+
+{% for dato in datos %}
+    
+    <código>
+
+{% endfor %}
+
+La etiqueta for siempre debe contener su cierre con un 'endfor'.

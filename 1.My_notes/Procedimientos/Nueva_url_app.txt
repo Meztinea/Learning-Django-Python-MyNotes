@@ -55,13 +55,49 @@ NOTAS IMPORTANTES:
     Ya tenemos claro que las url de la app deben integrarse en un archivo urls.py dentro de 
     la carpeta de la aplicación, pero es importante no olvidar que la aplicación debe ser
     relacionada con el proyecto, el archivo urls de la app debe ser referenciado dentro del 
-    archivo urls.py del proyecto. 
+    archivo urls.py del proyecto.
+
+    Ejemplo de cómo relacionar las urls de cada app en el proyecto:
+
+    path('', include('towns.urls')) 
 
     También deben indicarse las aplicaciones que son parte del proyecto dentro del archivo
     settings.py del proyecto. Dentro de la lista INSTALLED_APPS deben indicarse las app
     que forman parte del proyecto, se indica el nombre de la carpeta como un string.
 
+    Ejemplo de como relacionar cada app con el proyecto:
+
+    INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    
+    'towns',
+    ]
+
     Otro aspecto importante es relacionar los templates de las app con la configuración del 
     proyecto, dentro del archivo settings en la lista TEMPLATES en la variable DIRS se
     pueden definir las direcciones de los templates que formarán parte del proyecto.
     
+    Ejemplo de como indicar una ruta de templates del proyecto:
+
+    TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['towns/templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+En este caso los templates se encuentran dentro de la app towns en la carpeta templates.

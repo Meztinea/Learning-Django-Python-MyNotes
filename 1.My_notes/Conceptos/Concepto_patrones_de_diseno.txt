@@ -1,6 +1,6 @@
 Patrones de diseño
 
-* Los patronoes de diseño o design patterns, son una solución general, reutilizable y
+* Los patrones de diseño o design patterns, son una solución general, reutilizable y
 aplicable a diferentes problemas de diseño de software. Se trata de plantillas que 
 identifican problemas en el sistema y proporcionan soluciones apropiadas a 
 problemas generales a los que se han enfrendado los desarroladores durante un largo

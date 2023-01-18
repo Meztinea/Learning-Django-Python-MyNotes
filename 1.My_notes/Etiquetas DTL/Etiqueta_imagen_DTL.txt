@@ -1,0 +1,6 @@
+Para insertar una imagen que se encuentra dentro de la base de datos y agregarla dentro de un HTML
+
+Esta es la sintaxis que debe usarse dentro de HTML.
+La imagen está siendo enviada por medio de un objeto.
+
+{{ city.image.url }}

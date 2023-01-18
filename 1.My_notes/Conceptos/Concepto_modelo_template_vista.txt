@@ -1,4 +1,15 @@
-Modelo Template Vista (MTV)
+*** Modelo Template Vista (MTV) ***
+
+En Django, el controlador sigue estando presente, nada más que de una manera intrínseca, ya que
+todoo el framework Django es el controlador.
+
+Modelo: Maneja todo lo relacionado con la información, esto incluye cómo acceder a esta, la 
+validación, relación entre los datos y su comportamiento
+
+Template: Decide cómo será mostrada la información
+
+Vista: Es un enlace entre el modelo y el template. Decide qué información será mostrada y por 
+cual template.
 
 La manera en la que se comunican los diferentes paquetes, modulos, archivos de Django es:
 
@@ -17,4 +28,4 @@ La manera en la que se comunican los diferentes paquetes, modulos, archivos de D
 
 5. El template le envía al navegador lo que ha sido solicitado.
 
-Se adjunta el archivo Django_mtv para comprender mejor cómo funciona el Patrón de Diseño MTV.
+Se adjunta el archivo MTV-Django para comprender mejor cómo funciona el Patrón de Diseño MTV.

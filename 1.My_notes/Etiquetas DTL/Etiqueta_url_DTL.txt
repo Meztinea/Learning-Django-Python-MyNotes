@@ -1,0 +1,24 @@
+Django Template Language
+
+La etiqueta url como su nombre lo indica sirve integran urls dinamicas dentro de un archivo HTML.
+
+Algunos ejemplos del uso de esta etiqueta son:
+
+* href="{% url 'town' id=town.id %}"
+
+Lo que se encuentra dentro de las llaves {} es la etiqueta url.
+Primero se indica justamente que se trata de una etiqueta url incluyendo su nombre 'url'
+Posteriormente se indica una parte de esta url con la palabra 'town'
+Por último la parte 'id=town.id' indica que la última parte de la url debe ser lo que se 
+almacene dentro de esta variable.
+    En este caso lo almacenado será el atributo 'id' del objeto 'town', siendo este atributo un
+    número. 
+
+Finalmente la url que se está indicando en esta parte del HTML es : 
+    /town/1
+    /town/3
+    /town/9 
+
+Primero se indicó la primer parte 'town' despues la segunda parte '<el_numero>' que se encuentra
+almacenado dentro de la variable id que ha sido conseguida por medio de la vista que solicitó la
+información al modelo. 

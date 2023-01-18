@@ -13,6 +13,13 @@ python manage.py --help
 python manage.py runserver
     Corre el servidor.
 
+python manage.py makemigrations
+    Crea una migración, en este punto las tablas no han sido creadas, solo se define qué 
+    estructura deben tener según las especificaciones de la clase en el archivo models.py
+    * Este comando genera un nuevo archivo almacenado en la carpeta migrations de la aplicación
+    en la que se creó el nuevo modelo, en dicho archivo, se encuentra el código que se ejecutará
+    para la creación de la nueva tabla, modificación de tabla, etc. 
+
 python manage.py migrate 
     Aplica las migraciones que se crearon con el comando 'makemigrations', se encarga de ejecutar el 
     código del archivo y realizar los cambios de estructura en la base de datos. 
@@ -24,13 +31,7 @@ python manage.py createsuperuser
 python manage.py startapp <nombre de la aplicación>
     Crea una nueva aplicación (Carpeta con todos los archivos necesarios para la app)
 
-python manage.py makemigrations
-    Crea una migración, en este punto las tablas no han sido creadas, solo se define qué 
-    estructura deben tener según las especificaciones de la clase en el archivo models.py
-    * Este comando genera un nuevo archivo almacenado en la carpeta migrations de la aplicación
-    en la que se creó el nuevo modelo, en dicho archivo, se encuentra el código que se ejecutará
-    para la creación de la nueva tabla, modificación de tabla, etc. 
-
 python manage.py shell
-    Inicia el interprete de python para ejecutar comandos. 
+    Inicia el interprete de python para ejecutar comandos. Estos comandos pueden servir para
+    consultar datos de los modelos.
     

@@ -1,0 +1,35 @@
+Django Template Language (DTL)
+
+Cada vez que desarrollamos una nueva aplicación web, en algún momento tenemos que mostrar información
+de una base de datos o variables de su aplicación Django.
+
+La forma más sencilla de hacerlo es utilizando un lenguaje de plantilla, en el caso de Django the 
+Django Template Language (DTL).
+
+Al ser un framework web, Django necesita una forma conveniente de generar HTML dinámicamente. 
+Un proyecto Django se puede configurar con uno o varios motores de plantilla (o incluso cero si
+no usas plantillas).
+
+Django viene con su propio lenguaje de plantillas que se basa en el popular motor de plantillas Jinja2 
+y agrega algunas características que lo hacen más adecuado para el desarrollo web.
+
+De esta manera, por medio de Django Template Language los datos que están almacenados en la base de datos
+pueden ser utilizados por un template (html) de la forma más fácil. 
+
+Algunos ejemplos de etiquetas de DTL son:
+
+* {% Tag %}
+
+* {% if %}
+    <code>
+  {% end if %}
+
+* {% for x in y %}
+    <code>
+  {% endfor %}
+
+* {% include “header.html(file name)” %}
+
+* {% extends “base.html(file name)” %}
+
+Observa otros ejemplos en el siguiente enlace: https://pythonbasics.org/django-template-language/

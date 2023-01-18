@@ -1,0 +1,31 @@
+Agregar un nuevo modelo
+
+1. Definir su ubicación 
+    El modelo debe crearse dentro de la app a la que corresponde, dentro del archivo models.py.
+    Se define como una clase con atributos, la clase será la tabla y los atributos las columnas.
+
+2. Definir su nombre y heredar de models.Model
+    Se define su nombre en singular y utilizando camelcase. Debe heredar de models.Model para
+    que se considerado un modelo, de lo contrario solo se considerará una clase, sin los atributos
+    y métodos de un modelo Django.
+    
+3. Definir sus atributos
+    Deben definirse sus atributos, indicando el nombre (que será el nombre de una columna) y el
+    tipo de dato para cada atributo, también pueden utilizarse restricciones (null, default, etc)
+
+En este punto la estructura del modelo ya ha sido creada, aún hay otros pasos importantes relacionados
+al tema de modelos. 
+
+* Agregar modelo al panel administrativo
+    En caso de requerir acceder al modelo desde el panel administrativo que ya ofrece Django, es
+    necesario indicarlo dentro del archivo admin.py de la app en cuestión.
+    Ejemplo de cómo realizar este proceso:
+
+    from .models import City
+    admin.site.register(City)
+
+* Crear migraciones
+    Ejecutar el comando 'makemigrations' para crear las migraciones del nuevo modelo.
+
+* Aplicar las migraciones
+    Ejecutar el comando 'migrate' para aplicar las migraciones en la base de datos.

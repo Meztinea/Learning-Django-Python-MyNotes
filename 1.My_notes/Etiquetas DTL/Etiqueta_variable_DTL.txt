@@ -1,0 +1,14 @@
+Las etiquetas de Django Template Language sirven para introducir código python dentro de un archivo HTML.
+
+La sintaxis para acceder a una variable enviada dentro de un ojbeto o diccionario es:
+
+{{ diccionario.variable }}
+
+{{ objeto.atributo }}
+
+Mas ejemplos:
+
+Simple variable : {{ title }} , {{ x }}
+List attributes : {{ my_list.0 }}
+Object attributes : {{ obj.title }}
+Dictionary attribute : {{ dict.key }}
