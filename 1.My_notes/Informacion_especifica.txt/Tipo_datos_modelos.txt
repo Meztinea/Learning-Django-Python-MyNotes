@@ -10,3 +10,6 @@ Se enlistan los tipos de datos más utilizados para crear modelos (tablas de db)
 
 Más información en la documentación: 
 https://docs.djangoproject.com/es/4.1/topics/db/models/
+
+Al crear un atributo (camp)o para un modelo es posible especificar valores por defecto utilizando
+    default=True        default=False

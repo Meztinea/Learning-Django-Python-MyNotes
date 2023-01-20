@@ -1,0 +1,15 @@
+Error: Error loading MySQLdb module
+Did you install mysqlclient
+
+Este error se da comunmente al modificar la configuración de conexión a base de datos.
+
+Para solucionar el error es necesario realizar las siguientes configuraciones en el archivo 
+settings.py del proyecto.
+
+
+* Importar esto en el archivo settings.
+    import pymysql
+
+* Incluir estas lineas justo antes de la variable DATABASES en el archivo settings.py
+    pymysql.version_info = (1, 4, 2, 'final', 0)
+    pymysql.install_as_MySQLdb()

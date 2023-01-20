@@ -1,0 +1,12 @@
+Tal como los if de toda la vida, con Django Template Language es posible utilizar if dentro
+de un template.
+
+La sintaxis para utilizar una condicional if es:
+
+{% if task.done == False %}
+<p>Tarea pendiente</p>
+{% else %}
+<p>Tarea realizada</p>
+{% endif %}
+
+La etiqueta if siempre debe contener su cierre con un 'endif'.

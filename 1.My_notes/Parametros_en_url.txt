@@ -1,0 +1,37 @@
+En Django es posible crear una ruta que recibe parámetros, lo que hace que las rutas se vuelvan 
+dinámicas, una función que es muy práctica en aplicaciones web.
+
+Para comprender el tema se han creado la siguiente vista y url
+
+def hello(request,username):
+    return HttpResponse('<h2> Hello %s </h2>' %username)
+
+
+urlpatterns = [
+    path('hello/<str:usuario>', views.hello),
+]
+
+
+Para crear una ruta que recibe parámetros, esto debe indicarse al crear la ruta (url), como
+se puede observar, la ruta 'hello' recibe un parámetro de tipo string, esto significa que para acceder
+a esta ruta desde el navegador la manera correcta de hacerlo es: 
+
+/hello/raquel           otro ejemplo    /hello/jorge        otro ejemplo    hello/gatita
+
+También se observa que esta ruta (url) ejecuta la vista (función) llamada hello como se indica en el 
+segundo parámetro de dicho path (views.hello).
+
+Dicha vista debe recibir también ese parámetro, es por eso que recibe una petición 'request' y un parámetro 
+'username'. Dentro de su funcionalidad, la vista, utiliza este parámetro para realizar una impresión 
+del dato dentro de un h2 de HTML. Lo importante es que hace uso de esta variable dentro de su función.
+
+
+* Cuando se ha definido una ruta que recibe parámetros, es obligatorio pasar esos parámetros para
+que se pueda acceder a dicha ruta, de otro manera, el navegador lanzará el error de página no encontrada.
+
+Otro ejemplo interesante del uso de parámetros en url es el que se ha realizado dentro de este proyecto.
+Dentro del template principal se han listado 11 municipios, cada uno cuenta con un botón que dice leer más
+este botón ha sido configurado con una url dinámica que recibe como parámetro el id de cada town.
+La función get_town recibe un id ademas del request. Con el id solicita los datos del town al que corresponde
+dicho id. Con los datos obtenidos se renderiza un template (html) en el que se muestran dichos datos, este
+template es al que se puede acceder por medio del botón anteriormente mencionado.

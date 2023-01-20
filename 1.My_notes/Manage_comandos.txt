@@ -19,6 +19,8 @@ python manage.py makemigrations
     * Este comando genera un nuevo archivo almacenado en la carpeta migrations de la aplicación
     en la que se creó el nuevo modelo, en dicho archivo, se encuentra el código que se ejecutará
     para la creación de la nueva tabla, modificación de tabla, etc. 
+    * ES posible indicar la app de la cual se quieren crear las migraciones con:
+    python manage.py makemigrations <nombre_de_la_app>
 
 python manage.py migrate 
     Aplica las migraciones que se crearon con el comando 'makemigrations', se encarga de ejecutar el 
@@ -27,6 +29,7 @@ python manage.py migrate
 python manage.py createsuperuser
     Crea un super usuario para acceder al panel administrativo del proyecto Django
     Este comando solicitará el nombre de usuario, email y contraseña
+    * No es posible crear usuarios sin aplicar las migraciones básicas del proyecto de Django
 
 python manage.py startapp <nombre de la aplicación>
     Crea una nueva aplicación (Carpeta con todos los archivos necesarios para la app)

@@ -1,0 +1,47 @@
+Para estos ejemplos se han creado las siguientes tablas
+
+class Project(models.Model):
+    name = models.CharField(max_length=200)
+
+class Task(models.Model):
+    tittle = models.CharField(max_length=200)
+    description = models.TextField()
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+
+
+* Algunos de los comandos para el shell de Django son:
+
+from myapp.models import Project, Task
+    Esta importando los modelos (Project y Task) que se encuentran en la aplicación myapp
+
+p = Project(name='aplicacion movil')
+    Guarda en la variable la creación de un objeto de tipo Project cuyo nombre es aplicación movil
+
+p.save()
+    El valor almacenado en la variable p es almacenado dentro de la base de datos, según su tipo,
+    en este caso es de tipo project, así que se almacena dentro de la tabla Project
+
+Project.objects.all()
+    Muestra los objetos almacenados dentro de la tabla Projects, pero no muestra sus valores.
+
+Project.objects.get(id=2)
+    Trae al objeto (registro) de la tabla Project con el id = 2
+
+p.task_set.all()
+    'p' es una variable que se creó anteriormente y en la que se almacenó un proyecto especifico.
+    Este comando consulta todas las tareas que están relacionadas con el proyecto cuyo id
+    ha sido guardado dentro de la variable 'p'. Retorna un QuerySet con las tareas del proyecto.
+
+p.task_set.create(tittle='descargar IDE')
+    'p' es una variable que se creó anteriormente y en la que se almacenó un proyecto especifico.
+    En este caso se está creando un nuevo registro dentro de la tabla task, se crea una nueva tareas
+    y se indica el titulo de la tarea. Lo más importante de este comando es que esta nueva tarea está
+    siendo relacionada con un proyecto. El proyecto que está referenciado por medio de la variable 'p'.
+    Crea una nueva tarea con titulo 'descarga IDE' y relaciona su foregin key con este proyecto.
+
+Project.objects.filter(name__startswith='aplicacion')
+    Busca los registros dentro de la tabla Project cuyo nombre comienza con este string 'aplicacion'
+
+p = Projects.objects
+p.filter(name__startswith='aplicacion')
+    Busca los registros dentro de la tabla Project cuyo nombre comienza con este string 'aplicacion'

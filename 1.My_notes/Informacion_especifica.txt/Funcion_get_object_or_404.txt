@@ -1,0 +1,25 @@
+Esta función forma parte de las Django shortcut functions y debe ser importado desde 
+django.shortcuts
+
+Esta función permite solicitar datos de los modelos creados, la ventaja que tiene su uso es 
+que en caso de no encontrar el objeto solicitado, automáticamente lanza un error de tipo
+404 Not found.
+
+Ejemplo de la función:
+
+task = get_object_or_404(Task, id=id)
+
+variable = función( Modelo, parámetro)
+Esta es la estructura del funcionamiento, se crea una variable para almacenar los datos solicitados,
+se escribe el nombre de la función y entre paréntesis se indica el modelo del que se solicitan los 
+datos y el parámetro por el cuál se buscan esos datos.
+
+* Ejemplo directo de la documentación: 
+
+from django.shortcuts import get_object_or_404
+
+def my_view(request):
+    obj = get_object_or_404(MyModel, pk=1)
+
+Más información sobre esta función en:
+https://docs.djangoproject.com/es/4.1/topics/http/shortcuts/

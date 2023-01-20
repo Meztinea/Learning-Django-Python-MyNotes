@@ -11,7 +11,10 @@ configuraciones de importación. Algo que se utiliza mucho en este archivo es la
 de clases, funciones, etc, para que puedan ser utilizadas en otros paquetes.
 
 * ADMIN.PY
-Archivo para el panel de administración
+Archivo para el panel de administración.
+Dentro de este archivo pueden agregarse los modelos creados para poder agregar datos, modificar datos,
+eliminar datos, etc. Todos los modelos agregados en este archivo serán accesibles desde el panel
+de administrador en el navegador.
 
 * APPS.PY
 Archivo para configurar una aplicación

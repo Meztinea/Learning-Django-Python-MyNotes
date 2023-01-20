@@ -1,0 +1,53 @@
+Para conectar a una base de datos es necesario realizar configuraciones dentro del archivo
+settings.py del proyecto.
+
+Las indicaciones que se ofrecen dentro de la documentación son: 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydatabase',
+        'USER': 'mydatabaseuser',
+        'PASSWORD': 'mypassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
+Es la configuración que debe agregarse dentro del diccionario de nombre DATABASES dentro del 
+archivo settings.
+
+Este es un ejemplo de conexión a una base de datos postgresql, sin embargo, Django puede ser
+conectado a las siguientes bases de datos.
+
+* Postgresql
+* Mysql
+* Sqlite3
+* Oracle
+
+La conexión a base de datos para este proyecto se configuró de esta manera: 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'towns',
+        'USER': config('DBUSER'),
+        'PASSWORD': config('DBPASSWORD'),
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+
+ENGINE: Indica el tipo de base de datos que se va a configurarar, en este caso MySQL.
+NAME: Solicita el nombre de la base de datos a la que debe conectarse, es necesario crear 
+la base de datos antes de intentar realizar la conexión. 
+USER: Es el nombre de usuario con el que va a conectarse a la base de datos. En este caso
+el usuario ha sido almacenado en una variable de entorno.
+PASSWORD: Es la contraseña del usuario que se ha configurado anteriormente. En este caso
+también se ha almacenado como una variable de entorno. 
+HOST: En este caso al ser un proyecto personal se configura como localhost.
+PORT: En el puerto se ha dejado vacío para indicar que es el puerto por defecto.
+
+* Las variables están siendo leídas dentro del archivo por medio de Python Decouple. 
+Ver archivo: Variables de entorno. 
+
