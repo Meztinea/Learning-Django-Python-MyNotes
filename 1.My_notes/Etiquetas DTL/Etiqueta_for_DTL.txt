@@ -9,3 +9,12 @@ La sintaxis para incluir una etiqueta for dentro de HTML es:
 {% endfor %}
 
 La etiqueta for siempre debe contener su cierre con un 'endfor'.
+
+Existen algunas otras propiedades de un for que pueden ser utilizadas, entre ellas están:
+
+forloop.counter
+forloop.last
+forloop.first
+
+Encuentra maás información en la documentación de Django: 
+https://docs.djangoproject.com/en/4.1/ref/templates/builtins/

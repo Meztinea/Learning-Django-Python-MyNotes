@@ -18,21 +18,23 @@
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-4">
-                {% for town in towns %} 
+        {% for town in towns %}
+        {% if forloop.first %}<div class="row">{% endif %}
+            <div class="col-4"> 
                 <div class="card">
-                    <img src="{{ town.image.url }}" class="card-img-top float-start">
+                    <img src="{{ town.image.url }}" height='200' class="card-img-top float-start">
                     <div class="card-body">
                         <h5 class="card-title">{{ town.name }}</h5>
                         <h5 class="card-title">{{ town.country }}</h5>
-                        <p class="card-text">{{ town.description }}</p>
+                        <p class="card-text">{{ town.description|slice:'150' }}...</p>
                         <a class="btn btn-dark" href="{% url 'town' id=town.id %}">Leer mas</a>
                     </div>
                 </div>
-                {% endfor %}
             </div>
-        </div>
+        {% if forloop.counter|divisibleby:3 %} </div> <br/> <div class="row"> {% endif %}        
+        {% if forloop.last %}</div>{% endif %}        
+        {% endfor %}   
     </div>
+</div>
 </body>
 </html>
