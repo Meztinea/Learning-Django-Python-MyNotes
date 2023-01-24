@@ -1,0 +1,15 @@
+La  manera de incluir en el proyecto archivos estáticos como css es la siguiente.
+
+* Incluir los archivos estáticos dentro de una nueva carpeta que se encuentre ubicada
+al mismo nivel que el proyecto y las apps.
+
+* Realizar las modificaciones dentro del archivo settings.py del proyecto.
+    Debajo de la lista (variable) STATIC_URL 
+    Incluir los archivos estáticos de la siguiente manera
+    Creando una nueva lista (variable), indicando la dirección en la que se encuentra 
+    la carpeta de archivos estáticos. 
+
+    STATICFILES_DIRS = [
+    BASE_DIR / "staticfiles"
+    ]
+    

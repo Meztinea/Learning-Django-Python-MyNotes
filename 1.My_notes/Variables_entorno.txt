@@ -4,7 +4,7 @@ Estas variables de entorno son almacenadas en el sistema o configuración del si
 se puede acceder a ellas desde un archivo .py, es necesario instalar una librería para 
 leer dichas variables de entorno.
 
-Una librería efiente para leer variables de entorno de un archivo .py es: Python Decouple
+Una librería eficiente para leer variables de entorno de un archivo .py es: Python Decouple
 Para instalar la librería, ejecutar el siguiente comando dentro del entorno virtual.
 
 pip install python-decouple
@@ -18,4 +18,4 @@ from decouple import config
 
 * Acceder a una variable de entorno con la función config y el nombre de la variable
 
-password=config('NOMBRE_DE_VARIABLE')
+password=config('NOMBRE_DE_VARIABLE_DE_ENTORNO')

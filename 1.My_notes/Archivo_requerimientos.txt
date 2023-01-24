@@ -1,0 +1,20 @@
+Es necesario crear un archivo de requerimientos para almacenar los programas o librerias 
+necesarios para la aplicación. 
+
+Este archivo contiene la lista de todas las dependencias instaladas dentro del entorno virtual
+y las versiones que se están utilizando
+
+Para crear el archivo requirements.txt se ejecutan los siguientes comandos dentro del entorno virtual:
+
+    pip freeze > requirements.txt
+
+Una vez que el archivo se ha creado puede ser utilizado para instalar todas las dependencias listadas
+dentro de él, con un solo comando.
+
+Para instalar las dependencias listadas dentro de un archivo requirements ejecutar el comando:
+
+pip install -r requirements.txt
+
+De esta manera el archivo requirements.txt puede ahorrar mucho tiempo al probar o trabajar con un 
+nuevo proyecto, pues instalará todas las dependencias con un solo comando y respetará las versiones
+de cada dependencia.
