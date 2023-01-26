@@ -1,0 +1,18 @@
+Makefile es un facilitador para crear comandos resumidos en Python
+
+Para crear nuevos comandos se define el nombre del comando y se colocan dos puntos (:),
+en seguida se escribe el comando que será reemplazado por el comando más corto.
+
+Algunos de los comandos que se podrían configurar son los siguientes:
+
+run:
+    python manage.py runserver --settings=settings.local
+
+run-prod:
+    python manage.py runserver --settings=settings.prod
+
+migrate:
+    python manage.py migrate --settings=settings.local
+
+makemigrations:
+    python manage.py makemigrations--settings=settings.local

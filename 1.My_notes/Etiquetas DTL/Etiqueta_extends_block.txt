@@ -1,0 +1,28 @@
+La etiqueta extends permite heredar atributos de un html padre, al heredar todo el contenido 
+de otro archivo html contará con las mismas propiedades.
+
+Esta etiqueta se utiliza para reducir código en los templates y reutilizar elementos o características
+del template que serán comunes en otros templates.
+
+Para generar herencia en templates es necesario crear un archivo base.html para colocar la 
+parte del código común entre templates y crear un bloque de contenido.
+
+El bloque de contenido indica que en esa parte del código debe agregarse el código del html hijo.
+
+En el archivo base se integran los siguientes elementos:
+
+    {% block content %}
+    {% endblock %}
+
+Esta parte de código se ingresa en el body del template.
+
+Adicionalmente cada template hijo debe indicar que está heredando del template padre, de la siguientes
+manera:
+
+{% extends 'base.html' %}
+
+Esta línea debe colocarse en la parte superior del código del template. También es necesario agregar 
+etiquetas de bloque al inicio (para abrir el bloque) y al final (para cerrar el bloque).
+
+{% block content %}         --> Inicio del bloque
+{% endblock %}              --> Final del bloque

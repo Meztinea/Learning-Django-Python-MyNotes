@@ -19,3 +19,18 @@ from decouple import config
 * Acceder a una variable de entorno con la función config y el nombre de la variable
 
 password=config('NOMBRE_DE_VARIABLE_DE_ENTORNO')
+
+*** OTRA MANERA DE LEER DATOS SENCIBLES ***
+
+La otra manera de acceder a datos sencibles es por medio de la librería os.
+
+* Importar la librería os
+    import os
+
+* Leer cada variable con 
+    os.environ['DATABASE_NAME']
+ 
+NOTA: Guardar estos datos (variables) en un .env
+
+El archivo . env contiene las variables de entorno de usuario individuales que alteran temporalmente 
+las variables que se han establecido en el archivo /etc/environment.

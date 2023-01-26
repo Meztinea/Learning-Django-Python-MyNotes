@@ -1,0 +1,28 @@
+En los ambientes de desarrollo de aplicaciones reales, suele separarse el archivo settings.py del 
+proyecto que normalmente se crea en automático al ejecutar el comando de manage.py para crear
+un proyecto nuevo y es almacenado dentro de la carpeta de configuraciones del proyecto.
+
+La manera de separar el archivo settings para configurarlo tanto para un entorno local como para
+un entorno de producción es la siguiente:
+
+* Crear una nueva carpeta llamada settings a la altura del proyecto y de las apps.
+
+* Dentro de la carpeta crear un archivo llamado base.py y copiar todo lo almacenado en el archivo
+    settings.py del proyecto.
+
+* Crear un archivo dentro de la carpeta llamado local.py para realizar las configuraciones para un 
+    entorno local.
+        En este archivo se puede configurar la base de datos local.
+
+* Crear un archivo dentro de la carpeta llamado prod.py para realizar las configuraciones para un 
+    entorno de producción.
+
+
+NOTA IMPORTANTE: Despues de haber eliminado el archivo settings.py del proyecto, al ejecutarlo no
+correrá y se debe a la falta del archivo, para solucionar este error es necesario ejecutar 
+con el siguiente comando:
+
+python manage.py runserver --settings=settings.local
+
+Para acotar los comandos tan largos como este existe Makefile, para conocer más ir al archivo 
+Archivo_Makefile.txt

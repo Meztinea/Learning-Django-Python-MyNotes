@@ -1,0 +1,8 @@
+Para que los archivos estáticos y sus configuraciones sean leídos en los templates es 
+necesario agregar una línea (de tipo import) para indicar que deben leerse los archivos
+estáticos.
+
+Agregar esta línea al inicio de cada uno de los templates que van a utilizar los 
+archivos estáticos:
+
+    {% load static %}
